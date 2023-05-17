@@ -23,6 +23,7 @@ function Cart({ onClose }) {
       const stripe = await loadStripe(
         `${process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY}`
       );
+      // eslint-disable-next-line
       const data = await stripe.redirectToCheckout({
         sessionId: response.data.stripeId,
       });
