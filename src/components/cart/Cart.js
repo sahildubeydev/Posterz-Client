@@ -26,8 +26,6 @@ function Cart({ onClose }) {
       const data = await stripe.redirectToCheckout({
         sessionId: response.data.stripeId,
       });
-
-      console.log("stripe data", data);
     } catch (error) {
       console.log(error);
     }

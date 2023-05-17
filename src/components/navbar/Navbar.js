@@ -24,7 +24,7 @@ function Navbar() {
                     className="link"
                     to={`/category/${category.attributes.key}`}
                   >
-                    {category.attributes.title}
+                    {category?.attributes?.title}
                   </Link>
                 </li>
               ))}
@@ -32,7 +32,7 @@ function Navbar() {
           </div>
           <div className="nav-center">
             <Link to="/">
-              <h1 className="banner">Posterz.</h1>
+              <h1 className="banner">Posterz</h1>
             </Link>
           </div>
           <div className="nav-right">

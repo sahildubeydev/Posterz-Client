@@ -7,7 +7,7 @@ const cartSlice = createSlice({
   },
   reducers: {
     addToCart: (state, action) => {
-      const product = action.payload.attributes;
+      const product = action.payload?.attributes;
       const curItem = product
         ? {
             title: product.title,
@@ -26,7 +26,7 @@ const cartSlice = createSlice({
       }
     },
     removeFromCart: (state, action) => {
-      const curKey = action.payload?.attributes?.key || action.payload.key;
+      const curKey = action.payload?.attributes?.key || action.payload?.key;
 
       const index = state.cart.findIndex((item) => item.key === curKey);
       if (index === -1) return;
