@@ -6,6 +6,9 @@ made to help user to buy posters of there own interest.
 Stripe integration to handle online payments and Redux Persist to
 persist the cart data even after reloading the page
 
+## Posterz Server
+[Server Repo](https://github.com/sahildubeydev/Posterz-Server)
+
 ## Preview
 [posterz.webm](https://github.com/sahildubeydev/Posterz-Client/assets/48377225/e28d8295-9662-48ce-9744-1adb2dbe04a1)
 
